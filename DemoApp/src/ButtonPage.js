@@ -9,7 +9,7 @@ import {
   StackNavigator,
   Button
 } from 'react-native';
-
+import { RkButton } from 'rn-uikit';
 type Props = {};
 export default class ButtonPage extends Component<Props> {
     static navigationOptions = {
@@ -20,9 +20,10 @@ export default class ButtonPage extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
+        {/*<Text style={styles.welcome}>
             ButtonPage
-        </Text>
+        </Text>*/}
+        <RkButton />
             </View>
     )
   }
