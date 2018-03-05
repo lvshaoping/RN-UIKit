@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import {
     StyleSheet,
+    Platform,
 } from 'react-native';
 import colors from "../../styles/colors.js";
 import * as c from "../../styles/constants.js";
 
 
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        // justifyContent: 'center',
-        alignItems: 'center',
-    },
+export default StyleSheet.create({
     loginButton: {
         width: c.width - c.screenPadding * 2 - c.screenPadding,
         height: c.fixPx(88),
@@ -27,7 +23,8 @@ export const styles = StyleSheet.create({
             android: {
                 height: c.fixPx(98),
             },
-        })
+        }),
+        flexDirection: "row",
     },
     loginButtonText: {
         fontSize: c.titleFontSize,
@@ -68,5 +65,13 @@ export const styles = StyleSheet.create({
     confirmText: {
         color: colors.white,
         fontSize: c.fixPx(30)
+    },
+    content:{
+        
+    },
+    contentText:{
+        color:colors.white,
+        fontSize: c.fixPx(24),
+        marginTop: c.fixPx(4)
     }
 });
