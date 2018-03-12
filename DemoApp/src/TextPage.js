@@ -10,20 +10,25 @@ import {
   Button
 } from 'react-native';
 
+import RkText from "./src/components/text/rkText";
 type Props = {};
 export default class TextPage extends Component<Props> {
-    static navigationOptions = {
+  static navigationOptions = {
     title: 'TextPage',
   };
-  componentDidMount(){
+  componentDidMount() {
   }
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-            TextPage
-        </Text>
-            </View>
+        <RkText h1={true}>h1</RkText>
+        <RkText h2={true}>h2</RkText>
+        <RkText h3={true}>h3</RkText>
+        <RkText h4={true}>h4</RkText>
+        <RkText h5={true}>h5</RkText>
+        <RkText h6={true}>h6</RkText>
+        <RkText style={{color: 'red',fontSize: 40}}>h6</RkText>
+      </View>
     )
   }
 }
@@ -31,7 +36,7 @@ export default class TextPage extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
   },
   welcome: {

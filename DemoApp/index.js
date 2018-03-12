@@ -9,6 +9,7 @@ import ratingBar from "./src/ratingBar";
 import seekBar from "./src/seekBar";
 import selectBoxPage from "./src/selectBoxPage";
 import TextPage from "./src/TextPage";
+import ListPage from "./src/ListPage";
 
 const appNav = StackNavigator({
     'route.ComponentHall': { screen: ComponentHall },
@@ -19,6 +20,7 @@ const appNav = StackNavigator({
     'route.seekBar': { screen: seekBar },
     'route.selectBoxPage': { screen: selectBoxPage },
     'route.TextPage': { screen: TextPage },
+    'route.ListPage': { screen: ListPage },
 });
 
 AppRegistry.registerComponent('DemoApp', () => appNav);

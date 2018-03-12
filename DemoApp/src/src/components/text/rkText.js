@@ -1,50 +1,39 @@
 import React, { Component } from 'react';
 import {
-    Platform,
-    StyleSheet,
-    Text,
-    View,
-    TouchableHighlight,
-    TouchableOpacity,
-    Image,
+  Text,
 } from 'react-native';
-import colors from "../../styles/colors.js";
-import * as c from "../../styles/constants.js";
-import imgs from '../../assets/img/index.js';
 import styles from './types.js';
-
+import * as c from "../../styles/constants.js";
 type Props = {};
-export default class RkButton extends Component<Props> {
-    static navigationOptions = {
-        title: 'ButtonPage',
-    };
-    constructor() {
-        super();
-    }
+export default class RkText extends Component<Props> {
+  static navigationOptions = {
+    title: 'TextPage',
+  };
+  constructor() {
+    super();
+  }
 
-    componentDidMount() {
-    }
+  componentDidMount() {
+  }
 
-    render() {
-        const { title, type, buttonStyle, textStyle, onPress, icon, iconRight, content } = this.props;
+  render() {
+    const { style, children, h1, h2, h3, h4, h5, h6, fontFamily } = this.props;
 
-        return (
-            <TouchableOpacity
-                activeOpacity={0.7}
-                onPress={onPress?()=>{onPress()}:null}
-                style={[styles.loginButton, buttonStyle, content&&{flexDirection: "column"}]}>
-
-                {icon&&!iconRight&&(
-                    <Image source={imgs[icon]} style={styles.iconImg} />
-                )}
-                <Text style={[styles.loginButtonText, textStyle]}>{title}</Text>
-                {icon&&iconRight&&(
-                    <Image source={imgs[icon]} style={styles.iconImg} />
-                )}
-                {content&&(
-                    <View style={styles.content}><Text style={styles.contentText}>{content}</Text></View>
-                )}
-            </TouchableOpacity>
-        )
-    }
+    return (
+      <Text
+        style={[
+          styles.text,
+          h1 && { fontSize: c.fixPx(34) },
+          h2 && { fontSize: c.fixPx(32) },
+          h3 && { fontSize: c.fixPx(30) },
+          h4 && { fontSize: c.fixPx(28) },
+          h5 && { fontSize: c.fixPx(26) },
+          h6 && { fontSize: c.fixPx(22) },
+          fontFamily && { fontFamily },
+          style && style,
+        ]}>
+        {children}
+      </Text>
+    )
+  }
 }

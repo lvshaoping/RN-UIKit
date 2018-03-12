@@ -29,6 +29,7 @@ export default class ComponentHall extends Component<Props> {
           <Button title="seekBar" onPress={() => navigate('route.seekBar')}/>      
           <Button title="selectBoxPage" onPress={() => navigate('route.selectBoxPage')}/>
           <Button title="TextPage" onPress={() => navigate('route.TextPage')}/>
+          <Button title="ListPage" onPress={() => navigate('route.ListPage')}/>
 
       </View>
     )
