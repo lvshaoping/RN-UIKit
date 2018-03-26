@@ -16,7 +16,8 @@ import {
   ButtonBigRed, ButtonBigWhite, ButtonMiddleRed, ButtonImageSmall,
   ButtonImageMiddle, ButtonSmallRed, ButtonTwoRowText, ButtonCornerCommon, ButtonPlayChuan,
   ButtonPlayType, ButtonPaySelect
-} from "./src/components/button/rkButton";
+} from "rn-uikit";
+// "./src/components/button/rkButton";
 
 type Props = {};
 export default class ButtonPage extends Component<Props> {
