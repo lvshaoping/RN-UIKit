@@ -11,9 +11,8 @@ import {
 } from 'react-native';
 import colors from "./src/styles/colors.js";
 import * as c from "./src/styles/constants.js";
-import RkButton from "./src/components/button/rkButton";
 import {
-  ButtonBigRed, ButtonBigWhite, ButtonMiddleRed, ButtonImageSmall,
+   ButtonBigRed,ButtonBigWhite, ButtonMiddleRed, ButtonImageSmall,
   ButtonImageMiddle, ButtonSmallRed, ButtonTwoRowText, ButtonCornerCommon, ButtonPlayChuan,
   ButtonPlayType, ButtonPaySelect
 } from "rn-uikit";
