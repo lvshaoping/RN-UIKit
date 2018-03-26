@@ -18,3 +18,13 @@ export const height = Dimensions.get('window').height;
 export const screenPadding = fixPx(22);
 /** 标题文字大小 */
 export const titleFontSize = fixPx(34);
+
+/** 正常文字大小 */
+export const commonFontSize = fixPx(26);
+/** 小按钮的宽度 */
+export const smallButtonWidth = fixPx(162);
+
+/** 小屏距 */
+export const minPadding = fixPx(10);
+
+

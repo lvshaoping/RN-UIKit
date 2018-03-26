@@ -1,3 +1,7 @@
+import {
+  PixelRatio,
+  Dimensions,
+} from 'react-native'
 
 /** 像素密度 */
 export const density = PixelRatio.get() > 2 ? 2 : PixelRatio.get()
@@ -10,3 +14,17 @@ export const width = Dimensions.get('window').width;
 /** 屏幕高度 */
 
 export const height = Dimensions.get('window').height;
+/**屏幕内边距 */
+export const screenPadding = fixPx(22);
+/** 标题文字大小 */
+export const titleFontSize = fixPx(34);
+
+/** 正常文字大小 */
+export const commonFontSize = fixPx(26);
+/** 小按钮的宽度 */
+export const smallButtonWidth = fixPx(162);
+
+/** 小屏距 */
+export const minPadding = fixPx(10);
+
+
